@@ -81,6 +81,8 @@ Probe to monitor Aruba Networks 54XXR2 Switches.
    oid1_CurrentTemp,    1.3.6.1.4.1.11.2.14.11.1.2.8.1.1.3.0,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.1.2.8.1.1.3.0"
    oid1_3_6_1_2_1_17_2_15_1_3,   1.3.6.1.2.1.17.2.15.1.3 ,       DEFAULT, "1.3.6.1.2.1.17.2.15.1.3"
    OIDSERIAL, 1.3.6.1.4.1.11.2.36.1.1.2.9.0, DEFAULT, "Switch Serial #"
+   oidSoftwarerevision, 1.3.6.1.2.1.47.1.1.1.1.10.1, DEFAULT,"1.3.6.1.2.1.47.1.1.1.1.10.1"
+   oidROMVersion, 1.3.6.1.2.1.47.1.1.1.1.9.1, DEFAULT,"1.3.6.1.2.1.47.1.1.1.1.9.1"   
 
 oid1_3_6_1_4_1_11_2_14_11_5_1_9_6_1,     1.3.6.1.4.1.11.2.14.11.5.1.9.6.1,         INTEGER,  "CPU"
 newaverage,  0.25*$oid1_3_6_1_4_1_11_2_14_11_5_1_9_6_1 + 0.75*$prevaverage, CALCULATION, ""
@@ -149,6 +151,8 @@ HPLog/HPLogEventInfo, 1.3.6.1.2.1.16.9.2.1.4, STRING, "Event Info"
 <snmp-device-display>
 \B5\ArubaNetworks Health Checks\P0\
 \4\Switch Serial#:\0\ $OIDSERIAL \3G\(switch serial #)\M0\
+\4\Software revision:\0\ $oidSoftwarerevision \3G\ (Active Software Version)\M0\
+\4\ROM Version:\0\ $oidROMVersion \3G\ (ROM Version)\M0\
 
 CPU Info
 \4\CPU USAGE %:\0\ $oid1_3_6_1_4_1_11_2_14_11_5_1_9_6_1 \3G\(CPU % - Current)\M0\
