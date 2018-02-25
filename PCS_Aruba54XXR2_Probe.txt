@@ -1,0 +1,188 @@
+<!-- 
+  Updated By Kevin Ross (rossk@plainvilleschools.org)
+  Procurve SNMP Monitors - created by Seth Garrett (sbgarret@iupui.edu)
+
+  Please include any revisions here as well.
+  v1.0 - 10.5.10 - submitted to Dartware for sharing.
+--> 
+
+
+<description>
+
+\gb\Aruba Networks 54XXR2 Switches\p\
+
+Probe to monitor Aruba Networks 54XXR2 Switches.
+</description>
+
+-- The <header> section determines the probe's unique name, what kind of probe it is,
+-- its Human Name, and its place in the probe picker hierarchy, and other assorted attributes.
+
+<header>
+
+   "type"          =  "custom-snmp"
+   "package"       =  "com.dartware"
+   "probe_name"    =  "Aruba54xxR2"
+   "human_name"    =  "Aruba54xxR2"
+   "display_name"  =  "Aruba/Aruba54xxR2"
+   "version"       =  "2.0"
+   "address_type"  =  "IP,AT"
+   "port_number"   =  "161"
+
+</header>
+
+<snmp-device-properties>
+   -- none required
+</snmp-device-properties>
+
+
+<parameters>
+
+   "CPU-Usage_HiCrit"         = "85"
+   "CPU-Usage_HiAlrm"         = "75"
+   "FAN Sensor1_LoCrit"        = "5"
+   "FAN Sensor2_LoCrit"        = "5"
+   "FAN Sensor3_LoCrit"        = "5"
+   "FAN Sensor4_LoCrit"        = "5"
+   "FAN Sensor5_LoCrit"        = "5"
+   "FAN Sensor6_LoCrit"        = "5"
+   "FAN Sensor7_LoCrit"        = "5"
+   "FAN Sensor8_LoCrit"        = "5"
+   "FAN Sensor9_LoCrit"        = "5"
+   "FAN Sensor10_LoCrit"       = "5"
+   "Power Supply 1_LoCrit"    = "3"
+   "Power Supply 2_LoCrit"    = "3"
+   "Power Supply 3_LoCrit"    = "3"
+   "Power Supply 4_LoCrit"    = "3"
+   "Over Temp Sensor_LoCrit"  = "2"
+   "Temp_HiCrit"         = "40"
+
+</parameters>
+
+
+<snmp-device-variables>
+
+   oid1_3_6_1_4_1_11_2_14_11_5_1_9_6_1,     1.3.6.1.4.1.11.2.14.11.5.1.9.6.1,         DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.9.6.1"
+   oid1_Fan1,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.1,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.1"
+   oid1_Fan2,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.2,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.2"
+   oid1_Fan3,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.3,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.3"
+   oid1_Fan4,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.4,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.4"
+   oid1_Fan5,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.5,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.5"
+   oid1_Fan6,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.6,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.6"
+   oid1_Fan7,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.7,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.7"
+   oid1_Fan8,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.8,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.8"
+   oid1_Fan9,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.9,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.9"
+   oid1_Fan10,   1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.10,     DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.54.2.1.1.4.10"
+   oid1_Power1,   1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.1,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.1"
+   oid1_Power2,   1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.2,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.2"
+   oid1_Power3,   1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.3,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.3"
+   oid1_Power4,   1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.4,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.5.1.55.1.1.1.2.4"
+   oid1_OverTempSensor,	1.3.6.1.4.1.11.2.14.11.1.2.8.1.1.6.0,	     DEFAULT,  "1.3.6.1.4.1.11.2.14.11.1.2.8.1.1.6.0"
+   oid1_CurrentTemp,    1.3.6.1.4.1.11.2.14.11.1.2.8.1.1.3.0,       DEFAULT,  "1.3.6.1.4.1.11.2.14.11.1.2.8.1.1.3.0"
+   oid1_3_6_1_2_1_17_2_15_1_3,   1.3.6.1.2.1.17.2.15.1.3 ,       DEFAULT, "1.3.6.1.2.1.17.2.15.1.3"
+   OIDSERIAL, 1.3.6.1.4.1.11.2.36.1.1.2.9.0, DEFAULT, "Switch Serial #"
+
+oid1_3_6_1_4_1_11_2_14_11_5_1_9_6_1,     1.3.6.1.4.1.11.2.14.11.5.1.9.6.1,         INTEGER,  "CPU"
+newaverage,  0.25*$oid1_3_6_1_4_1_11_2_14_11_5_1_9_6_1 + 0.75*$prevaverage, CALCULATION, ""
+prevaverage, $newaverage,                      CALCULATION, ""
+
+</snmp-device-variables>
+
+
+<snmp-device-thresholds>
+
+critical: ( $oid1_CurrentTemp    >  ${Temp_HiCrit}        ) "Temperature Too High ($oid1_CurrentTemp) >  ${Temp_HiCrit}" 
+critical: ( $newaverage   >  ${CPU-Usage_HiCrit}        ) "CPU Usage Critical State($newaverage) >  ${CPU-Usage_HiCrit}" 
+warning: ( $oid1_Fan1  <  ${FAN Sensor1_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan2  <  ${FAN Sensor2_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan3  <  ${FAN Sensor3_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan4  <  ${FAN Sensor4_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan5  <  ${FAN Sensor5_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan6  <  ${FAN Sensor6_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan7  <  ${FAN Sensor7_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan8  <  ${FAN Sensor8_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan9  <  ${FAN Sensor9_LoCrit}       ) "FAN ERROR!" 
+warning: ( $oid1_Fan10  <  ${FAN Sensor10_LoCrit}       ) "FAN ERROR!" 
+alarm: ( $oid1_Power1  <  ${Power Supply 1_LoCrit}   ) "Power Supply 1 Error!" 
+alarm: ( $oid1_Power2  <  ${Power Supply 2_LoCrit}   ) "Power Supply 2 Error!" 
+alarm: ( $oid1_Power3  <  ${Power Supply 3_LoCrit}   ) "Power Supply 3 Error!" 
+alarm: ( $oid1_Power4  <  ${Power Supply 4_LoCrit}   ) "Power Supply 4 Error!" 
+critical: ( $oid1_OverTempSensor  <  ${Over Temp Sensor_LoCrit} ) "HP Temperature Sensor Tripped!" 
+alarm: ( $newaverage    >  ${CPU-Usage_HiAlrm}        ) "CPU Usage Alarm State($newaverage) >  ${CPU-Usage_HiAlrm}" 
+
+
+</snmp-device-thresholds>
+
+
+
+<snmp-device-variables-ondemand>
+IntTable,               .1,                    TABLE,       "Extended ifTable"
+IntTable/ifName,        IF-MIB::ifName,        DEFAULT,     "Name"     
+IntTable/ifAlias,       IF-MIB::ifAlias,       DEFAULT,     "Alias"     
+IntTable/ifType,        IF-MIB::ifType,        STRING,      "Link Type  "
+IntTable/ifHighSpeed,   IF-MIB::ifHighSpeed,   DEFAULT,     "Speed"
+IntTable/ifPhysAddress, IF-MIB::ifPhysAddress, HEXADECIMAL, "MAC Address "
+IntTable/ifOperStatus,  IF-MIB::ifOperStatus,  STRING,      "Opn'l"
+IntTable/ifAdminStatus, IF-MIB::ifAdminStatus, DEFAULT,     "Admin"
+IntTable/ifInBytes, 1.3.6.1.2.1.2.2.1.10, DEFAULT,     "RxBytes"
+IntTable/ifOutBytes, 1.3.6.1.2.1.2.2.1.16, DEFAULT,     "TxBytes"
+IntTable/ifInBcast, 1.3.6.1.2.1.2.2.1.12, DEFAULT,     "RxBcastMcast Pkts"
+IntTable/ifOutBcast, 1.3.6.1.2.1.2.2.1.18, DEFAULT,     "TxBcastMcast Pkts"
+IntTable/ifInErrors, 1.3.6.1.2.1.2.2.1.14, DEFAULT,     "RxErrors"
+IntTable/ifInDiscards, 1.3.6.1.2.1.2.2.1.13, DEFAULT,     "RxDiscards"
+IntTable/ifOutErrors, 1.3.6.1.2.1.2.2.1.20, DEFAULT,     "TxErrors"
+IntTable/ifOutDiscards, 1.3.6.1.2.1.2.2.1.19, DEFAULT,     "TxDrops"
+
+lldpTable, .1, TABLE
+lldpTable/lldpRemSysName, 1.0.8802.1.1.2.1.4.1.1.9.0, STRING, "Remote Name"
+lldpTable/lldpRemPortDesc, 1.0.8802.1.1.2.1.4.1.1.8.0, STRING, "Remote Port"
+lldpTable/lldpRemSysDesc, 1.0.8802.1.1.2.1.4.1.1.10.0, STRING, "Remote Model"
+
+
+HPLog, .1, TABLE
+HPLog/HPLogEventInfo, 1.3.6.1.2.1.16.9.2.1.4, STRING, "Event Info"
+
+
+</snmp-device-variables-ondemand>
+
+
+<snmp-device-display>
+\B5\ArubaNetworks Health Checks\P0\
+\4\Switch Serial#:\0\ $OIDSERIAL \3G\(switch serial #)\M0\
+
+CPU Info
+\4\CPU USAGE %:\0\ $oid1_3_6_1_4_1_11_2_14_11_5_1_9_6_1 \3G\(CPU % - Current)\M0\
+\4\CPU USAGE %:\0\ $newaverage \3G\(CPU % - 2 min average)\M0\
+
+Fan Info
+\4\Fan Sensor1:\0\ $oid1_Fan1 \3G\${eval: $oid1_Fan1==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan1==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan1==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan1==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan1==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan1==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan1==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Fan Sensor2:\0\ $oid1_Fan2 \3G\${eval: $oid1_Fan2==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan2==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan2==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan2==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan2==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan2==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan2==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Fan Sensor3:\0\ $oid1_Fan3 \3G\${eval: $oid1_Fan3==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan3==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan3==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan3==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan3==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan3==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan3==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Fan Sensor4:\0\ $oid1_Fan4 \3G\${eval: $oid1_Fan4==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan4==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan4==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan4==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan4==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan4==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan4==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Fan Sensor5:\0\ $oid1_Fan5 \3G\${eval: $oid1_Fan5==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan5==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan5==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan5==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan5==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan5==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan5==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Fan Sensor6:\0\ $oid1_Fan6 \3G\${eval: $oid1_Fan6==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan6==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan6==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan6==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan6==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan6==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan6==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Power Supply 1 Fan Sensor7:\0\ $oid1_Fan7 \3G\${eval: $oid1_Fan7==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan7==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan7==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan7==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan7==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan7==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan7==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Power Supply 2 Fan Sensor8:\0\ $oid1_Fan8 \3G\${eval: $oid1_Fan8==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan8==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan8==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan8==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan8==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan8==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan8==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Power Supply 3 Fan Sensor9:\0\ $oid1_Fan9 \3G\${eval: $oid1_Fan9==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan9==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan9==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan9==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan9==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan9==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan9==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+\4\Power Supply 4 Fan Sensor10:\0\ $oid1_Fan10 \3G\${eval: $oid1_Fan10==0 ? ($response := "0=Fan Failed") : ($response := "") }${eval: $oid1_Fan10==1 ? ($response := "1=Fan Removed") : ($response := "") }${eval: $oid1_Fan10==2 ? ($response := "2=Fan Off") : ($response := "") }${eval: $oid1_Fan10==3 ? ($response := "3=Fan Underspeed") : ($response := "") }${eval: $oid1_Fan10==4 ? ($response := "4=Fan OverSpeed") : ($response := "") }${eval: $oid1_Fan10==5 ? ($response := "5=OK") : ($response := "") }${eval: $oid1_Fan10==6 ? ($response := "6=Maxstate") : ($response := "") }\M0\
+
+Power Supply Info
+\4\Power Supply 1:\0\ $oid1_Power1 \3G\${eval: $oid1_Power1==1 ? ($response := "1=Power Supply Not Present") : ($response := "") }${eval: $oid1_Power1==2 ? ($response := "2=Power Supply NotPlugged") : ($response := "") }${eval: $oid1_Power1==3 ? ($response := "3=OK") : ($response := "") }${eval: $oid1_Power1==4 ? ($response := "4=Power Supply Failed") : ($response := "") }${eval: $oid1_Power1==5 ? ($response := "5=Power Supply PermFailure") : ($response := "") }${eval: $oid1_Power1==6 ? ($response := "6=Power Supply Max") : ($response := "") }${eval: $oid1_Power1==7 ? ($response := "7=Power Supply AuxFailure") : ($response := "") }${eval: $oid1_Power1==8 ? ($response := "8=Power Supply Not Powered") : ($response := "") }${eval: $oid1_Power1==9 ? ($response := "9=Power Supply AuxNotPowered") : ($response := "") }\M0\
+\4\Power Supply 2:\0\ $oid1_Power2 \3G\${eval: $oid1_Power2==1 ? ($response := "1=Power Supply Not Present") : ($response := "") }${eval: $oid1_Power2==2 ? ($response := "2=Power Supply NotPlugged") : ($response := "") }${eval: $oid1_Power2==3 ? ($response := "3=OK") : ($response := "") }${eval: $oid1_Power2==4 ? ($response := "4=Power Supply Failed") : ($response := "") }${eval: $oid1_Power2==5 ? ($response := "5=Power Supply PermFailure") : ($response := "") }${eval: $oid1_Power2==6 ? ($response := "6=Power Supply Max") : ($response := "") }${eval: $oid1_Power2==7 ? ($response := "7=Power Supply AuxFailure") : ($response := "") }${eval: $oid1_Power2==8 ? ($response := "8=Power Supply Not Powered") : ($response := "") }${eval: $oid1_Power2==9 ? ($response := "9=Power Supply AuxNotPowered") : ($response := "") }\M0\
+\4\Power Supply 3:\0\ $oid1_Power3 \3G\${eval: $oid1_Power3==1 ? ($response := "1=Power Supply Not Present") : ($response := "") }${eval: $oid1_Power3==2 ? ($response := "2=Power Supply NotPlugged") : ($response := "") }${eval: $oid1_Power3==3 ? ($response := "3=OK") : ($response := "") }${eval: $oid1_Power3==4 ? ($response := "4=Power Supply Failed") : ($response := "") }${eval: $oid1_Power3==5 ? ($response := "5=Power Supply PermFailure") : ($response := "") }${eval: $oid1_Power3==6 ? ($response := "6=Power Supply Max") : ($response := "") }${eval: $oid1_Power3==7 ? ($response := "7=Power Supply AuxFailure") : ($response := "") }${eval: $oid1_Power3==8 ? ($response := "8=Power Supply Not Powered") : ($response := "") }${eval: $oid1_Power3==9 ? ($response := "9=Power Supply AuxNotPowered") : ($response := "") }\M0\
+\4\Power Supply 4:\0\ $oid1_Power4 \3G\${eval: $oid1_Power4==1 ? ($response := "1=Power Supply Not Present") : ($response := "") }${eval: $oid1_Power4==2 ? ($response := "2=Power Supply NotPlugged") : ($response := "") }${eval: $oid1_Power4==3 ? ($response := "3=OK") : ($response := "") }${eval: $oid1_Power4==4 ? ($response := "4=Power Supply Failed") : ($response := "") }${eval: $oid1_Power4==5 ? ($response := "5=Power Supply PermFailure") : ($response := "") }${eval: $oid1_Power4==6 ? ($response := "6=Power Supply Max") : ($response := "") }${eval: $oid1_Power4==7 ? ($response := "7=Power Supply AuxFailure") : ($response := "") }${eval: $oid1_Power4==8 ? ($response := "8=Power Supply Not Powered") : ($response := "") }${eval: $oid1_Power4==9 ? ($response := "9=Power Supply AuxNotPowered") : ($response := "") }\M0\
+
+Temperature Info
+\4\Temperature:\0\ $oid1_CurrentTemp \3G\(celcius)\M0\
+\4\Over Temp Sensor:\0\ $oid1_OverTempSensor \3G\${eval: $oid1_OverTempSensor==1 ? ($response := "1=Temp Error") : ($response := "") }${eval: $oid1_OverTempSensor==2 ? ($response := "2=OK") : ($response := "") }\M0\
+
+Note: 5406 Switches with only two power supplies 
+will show Status=4 for Power Supplies 3 & 4.
+
+${IntTable:View Interface Data}
+
+${HPLog:View Switch Event Log}
+
+${lldpTable:View LLDP Data}
+
+
+</snmp-device-display>
